@@ -12,11 +12,14 @@
           <!-- Last name -->
           <input type="text" [(ngModel)]="Students.rollnumber" class="form-control" id="rn1" name="rollnumber" placeholder="rollnumber" >
       </div>
-  </div>
+    </div>
 
   <!-- E-mail -->
-  <input type="text" [(ngModel)]="Students.name" class="form-control" id="rn2" name="name" placeholder="student name" >
 
+  <input type="text" [(ngModel)]="Students.name" class="form-control" id="rn2" name="name" placeholder="student name" >
+  <small id="defaultRegisterFormPhoneHelpBlock" class="form-text text-muted mb-4">
+    Optional - for two step authentication
+</small>
   <!-- Password -->
   <input type="text" [(ngModel)]="Students.book" class="form-control" id="rn3" name="book" placeholder="Book name" >
   <small id="defaultRegisterFormPasswordHelpBlock" class="form-text text-muted mb-4">
