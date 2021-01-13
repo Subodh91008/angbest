@@ -1,1 +1,24 @@
-<p>allview works!</p>
+<h1>Student record</h1>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Id</th>
+      <th scope="col">Rollnumber number</th>
+      <th scope="col">Name</th>
+      <th scope="col">Book</th>
+      <th scope="col">fees</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let s of students"  class="table-active">
+
+      <td>{{s.id}}Mark</td>
+      <td>{{s.rollnumber}}Mark</td>
+      <td>{{s.name}}Mark</td>
+      <td>{{s.book}}Mark</td>
+      <td>{{s.fees}}Mark</td>
+
+    </tr>
+
+  </tbody>
+</table>
