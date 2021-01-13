@@ -1,42 +1,39 @@
 <!-- Default form register -->
-<form class="text-center border border-light p-5" action="#!">
+<form class="text-center border border-light p-5" (ngSubmit)="savestudent()" method="POST">
 
   <p class="h4 mb-4">Sign up</p>
 
   <div class="form-row mb-4">
       <div class="col">
           <!-- First name -->
-          <input type="text" id="defaultRegisterFormFirstName" class="form-control" placeholder="First name">
+          <input type="text" [(ngModel)]="Students.id"  id="rn" class="form-control" name="id" placeholder="Student id"  >
       </div>
       <div class="col">
           <!-- Last name -->
-          <input type="text" id="defaultRegisterFormLastName" class="form-control" placeholder="Last name">
+          <input type="text" [(ngModel)]="Students.rollnumber" class="form-control" id="rn1" name="rollnumber" placeholder="rollnumber" >
       </div>
   </div>
 
   <!-- E-mail -->
-  <input type="email" id="defaultRegisterFormEmail" class="form-control mb-4" placeholder="E-mail">
+  <input type="text" [(ngModel)]="Students.name" class="form-control" id="rn2" name="name" placeholder="student name" >
 
   <!-- Password -->
-  <input type="text" id="defaultRegisterFormPassword" class="form-control" placeholder="Password" aria-describedby="defaultRegisterFormPasswordHelpBlock">
+  <input type="text" [(ngModel)]="Students.book" class="form-control" id="rn3" name="book" placeholder="Book name" >
   <small id="defaultRegisterFormPasswordHelpBlock" class="form-text text-muted mb-4">
       At least 8 characters and 1 digit
   </small>
 
   <!-- Phone number -->
-  <input type="text" id="defaultRegisterPhonePassword" class="form-control" placeholder="Phone number" aria-describedby="defaultRegisterFormPhoneHelpBlock">
+  <input type="text" [(ngModel)]="Students.fees" class="form-control" id="rn4" name="fees" placeholder="fees" >
   <small id="defaultRegisterFormPhoneHelpBlock" class="form-text text-muted mb-4">
       Optional - for two step authentication
   </small>
 
   <!-- Newsletter -->
-  <div class="custom-control custom-checkbox">
-      <input type="checkbox" class="custom-control-input" id="defaultRegisterFormNewsletter">
-      <label class="custom-control-label" for="defaultRegisterFormNewsletter">Subscribe to our newsletter</label>
-  </div>
+
 
   <!-- Sign up button -->
-  <button class="btn btn-info my-4 btn-block" type="submit">Sign in</button>
+  <button class="btn btn-info my-4 btn-block" type="submit">Register Student</button>
 
   <!-- Social register -->
   <p>or sign up with:</p>
