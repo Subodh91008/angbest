@@ -5,37 +5,37 @@
 
   <p class="h4 mb-4">Sign up</p>
 
-  <div class="form-row mb-4">
-      <div class="col">
-          <!-- First name -->
-          <input type="text" [(ngModel)]="Students.id"   class="form-control" name="id" placeholder="Student id"  >
-      </div>
-      <div class="col">
-          <!-- Last name -->
-          <input type="text" [(ngModel)]="Students.rollnumber" class="form-control" id="rn1" name="rollnumber" placeholder="rollnumber" >
-      </div>
-    </div>
+
+     <div class="col  ">
+           <!-- First name -->
+
+           <input type="text" [(ngModel)]="Students.id"  id="a" name ="id"class="form-control" placeholder="Student id"  >
+      </div><br>
+
+       <div class="col">
+          <!-- rollnumber -->
+          <input type="text" [(ngModel)]="Students.rollnumber" class="form-control"  name="rollnumber" placeholder="rollnumber" >
+      </div><br>
+
 
   <!-- E-mail -->
+  <div class="col">
+    <input type="text" [(ngModel)]="Students.name" class="form-control"  name="name" placeholder="student name" >
+  </div><br>
 
-  <input type="text" [(ngModel)]="Students.name" class="form-control" id="rn2" name="name" placeholder="student name" >
-  <small id="defaultRegisterFormPhoneHelpBlock" class="form-text text-muted mb-4">
-    Optional - for two step authentication
-</small>
+
   <!-- Password -->
-  <input type="text" [(ngModel)]="Students.book" class="form-control" id="rn3" name="book" placeholder="Book name" >
-  <small id="defaultRegisterFormPasswordHelpBlock" class="form-text text-muted mb-4">
-      At least 8 characters and 1 digit
-  </small>
+  <div class="col">
+  <input type="text" [(ngModel)]="Students.book" class="form-control"  name="book" placeholder="Book name" >
 
+</div><br>
   <!-- Phone number -->
-  <input type="text" [(ngModel)]="Students.fees" class="form-control" id="rn4" name="fees" placeholder="fees" >
-  <small id="defaultRegisterFormPhoneHelpBlock" class="form-text text-muted mb-4">
-      Optional - for two step authentication
-  </small>
+  <div class="col">
+  <input type="text" [(ngModel)]="Students.fees" class="form-control"  name="fees" placeholder="fees" >
 
+</div>
   <!-- Newsletter -->
-  <h1>{{msg}}</h1>
+   <h1>{{msg}}</h1>
 
   <!-- Sign up button -->
   <button class="btn btn-info my-4 btn-block" type="submit">Register Student</button>
@@ -57,4 +57,4 @@
 
 </form>
 <!-- Default form register -->
-<h1>{{msg}}</h1>
+
