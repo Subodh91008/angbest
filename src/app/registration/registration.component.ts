@@ -21,8 +21,6 @@ export class RegistrationComponent implements OnInit {
 
   public savestudent(){
 
-     if (this.Students.id != null&&this.Students.id != undefined)
-
       if  (this.Students.name != null  && this.Students.name != undefined && this.Students.name.match(this.rex))
         if (this.Students.rollnumber != null&&this.Students.rollnumber != undefined)
           if (this.Students.book != null&&this.Students.book != undefined)
@@ -34,7 +32,6 @@ export class RegistrationComponent implements OnInit {
           this.Students=new Student()},
         error=>{console.log(error);
         }
-
         );
      }
 

@@ -9,7 +9,7 @@ import { HttpClient, HttpClientModule } from '@angular/common/http'
 export class StudentserviceService {
 
   baseurl = "https://microservic1e.herokuapp.com/student/data";
-  //baseurl = "http://localhost:9898/student/data";
+ // baseurl = "http://localhost:8080/student";
    public name="subodh";
   constructor(private http: HttpClient) { }
 
